@@ -1,0 +1,838 @@
+/* Font Setup -- START */
+@font-face {
+    font-family:"brevier";
+    src:url("https://use.typekit.net/af/809e4b/00000000000000007735ac8b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff");
+    font-display:auto;font-style:normal;font-weight:500;
+    }
+
+@font-face {
+    font-family:"hedley-new-web";
+    src:url("https://use.typekit.net/af/8f046d/000000000000000077359c70/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff");
+    font-display:auto;font-style:normal;font-weight:300;
+    }
+
+@font-face {
+    font-family:"hedley-new-web";
+    src:url("https://use.typekit.net/af/58f06a/000000000000000077359c84/30/d?subset_id=2&fvd=i3&v=3") format("woff");
+    font-display:auto;font-style:italic;font-weight:300;
+}
+
+@font-face {
+    font-family:"hedley-new-web";
+    src:url("https://use.typekit.net/af/df1646/000000000000000077359c7f/30/d?subset_id=2&fvd=n5&v=3") format("woff");
+    font-display:auto;font-style:normal;font-weight:500;
+}
+/* Font Setup -- END */
+
+body {
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+header, footer {
+    background-image: linear-gradient(to right, white, sienna, brown, red, orangered, 
+    orange, gold, lawngreen, turquoise, dodgerblue, blueviolet, 
+    darkmagenta, mediumvioletred, black);
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0.5em;
+}
+
+nav li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav a {
+    font-size: 80%;
+    color: rgb(20, 20, 20);
+    font-family: brevier;
+}
+
+nav a:hover {
+    color: whitesmoke;
+}
+
+nav a:active {
+    color: rgb(20, 20, 20);
+}
+
+.list-div {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-bottom: 2.5px;
+}
+
+main {
+    width: 70%;
+    margin-left: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    font-family: hedley-new-web;
+    font-weight: 500;
+}
+
+#page-heading {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 600%;
+    text-align: center;
+    font-family: brevier;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    padding-top: 1.75em;
+}
+
+.bar {
+    height: 1px;
+    width: 150px;
+    margin-left: calc(50% - 75px);
+    background-image: linear-gradient(to right, rgb(20, 20, 20), brown, red, orangered, 
+    orange, gold, lawngreen, turquoise, dodgerblue, blueviolet, 
+    darkmagenta, mediumvioletred, rgb(20, 20, 20));
+}
+
+.intro{
+    font-size: 1.1rem;
+    margin-top: 2em;
+}
+
+p {
+    text-align: center;
+    font-family: hedley-new-web;
+    font-weight: 300;
+}
+
+strong b {
+    font-family: hedley-new-web;
+    font-weight: 500;
+}
+
+em {
+    font-family: hedley-new-web;
+    font-weight: 300;
+    font-style: italic;
+}
+
+section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+th {
+    font-family: brevier;
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    border-bottom: 0.5px solid whitesmoke;
+}
+
+.color-codes td p {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+td p {
+    font-size: 75%;
+}
+
+p.text-rev {
+    color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+.top-link {
+    font-size: 1rem;
+    color: rgb(20, 20, 20);
+    text-transform: uppercase;
+    font-family: brevier;
+}
+
+.top-link:hover {
+    color: whitesmoke;
+}
+
+.top-link:active {
+    color: rgb(20, 20, 20);
+}
+
+.name-tag {
+    color: black;
+    text-align: center;
+    font-family: brevier;
+    font-size: 0.65rem;
+}
+
+.swatch {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Scrollbar START */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(35, 35, 35);
+  }
+  /* Scrollbar END */
+
+  /* Text Highlight */
+::-moz-selection {
+    background-color: rgb(65, 65, 65);
+    color: whitesmoke;
+}
+
+::selection{
+    background-color: rgb(65, 65, 65);
+    color: whitesmoke;
+}
+
+/* Whites--START */
+.whi {
+    background-color: white;
+}
+
+.snow {
+    background-color: snow;
+}
+
+.hdew {
+    background-color: honeydew;
+}
+
+.mint-cre {
+    background-color: mintcream;
+}
+
+.azure {
+    background-color: azure;
+}
+
+.alice-blu {
+    background-color: aliceblue;
+}
+
+.ghost-whi {
+    background-color: ghostwhite;
+}
+
+.whi-smoke {
+    background-color: whitesmoke;
+}
+
+.seashell {
+    background-color: seashell;
+}
+
+.beige {
+    background-color: beige;
+}
+
+.old-lace {
+    background-color: oldlace;
+}
+
+.floral-whi {
+    background-color: floralwhite;
+}
+
+.ivory {
+    background-color: ivory;
+}
+
+.anti-whi {
+    background-color: antiquewhite;
+}
+
+.linen {
+    background-color: linen;
+}
+
+.lav-blus {
+    background-color: lavenderblush;
+}
+
+.mist-rose {
+    background-color: mistyrose;
+}
+/* Whites--END */
+
+/* Browns--START */
+.corn-silk {
+    background-color: cornsilk;
+}
+
+.bla-almond {
+    background-color: blanchedalmond;
+}
+
+.bisque {
+    background-color: bisque;
+}
+
+.nava-whi {
+    background-color: navajowhite;
+}
+
+.wheat {
+    background-color: wheat;
+}
+
+.bur-wood {
+    background-color: burlywood;
+}
+
+.tan {
+    background-color: tan;
+}
+
+.rose-brwn {
+    background-color: rosybrown;
+}
+
+.sand-brwn {
+    background-color: sandybrown;
+}
+
+.grod {
+    background-color: goldenrod;
+}
+
+.dark-grod {
+    background-color: darkgoldenrod;
+}
+
+.peru {
+    background-color: peru;
+}
+
+.choc {
+    background-color: chocolate;
+}
+
+.sad-brwn {
+    background-color: saddlebrown;
+}
+
+.sienna {
+    background-color: sienna;
+}
+
+.brwn {
+    background-color: brown;
+}
+
+.maroon {
+    background-color: maroon;
+}
+/* Browns--END */
+
+/* Reds--START */
+.ind-red {
+    background-color: indianred;
+}
+
+.light-coral {
+    background-color: lightcoral;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.dark-salmon {
+    background-color: darksalmon;
+}
+
+.light-salmon {
+    background-color: lightsalmon;
+}
+
+.crim {
+    background-color: crimson;
+}
+
+.red {
+    background-color: red;
+}
+
+.fire-brick {
+    background-color: firebrick;
+}
+
+.dark-red {
+    background-color: darkred;
+}
+/* Reds--END */
+
+/* Oranges--START */
+.coral {
+    background-color: coral;
+}
+
+.tom {
+    background-color: tomato;
+}
+
+.orng-red {
+    background-color: orangered;
+}
+
+.dark-orng {
+    background-color: darkorange;
+}
+
+.orng {
+    background-color: orange;
+}
+/* Oranges--END */
+
+/* Yellows--START */
+.gold {
+    background-color: gold;
+}
+
+.ylw {
+    background-color: yellow;
+}
+
+.light-ylw {
+    background-color: lightyellow;
+}
+
+.lem-chif {
+    background-color: lemonchiffon;
+}
+
+.light-grod-ylw {
+    background-color: lightgoldenrodyellow;
+}
+
+.pap-whi {
+    background-color: papayawhip;
+}
+
+.mocca {
+    background-color: moccasin;
+}
+
+.pch-puf {
+    background-color: peachpuff;
+}
+
+.pale-grod {
+    background-color: palegoldenrod;
+}
+
+.khaki {
+    background-color: khaki;
+}
+
+.dark-khaki {
+    background-color: darkkhaki;
+}
+/* Yellows--END */
+
+/* Greens--START */
+.grn-ylw {
+    background-color: greenyellow;
+}
+
+.chart {
+    background-color: chartreuse;
+}
+
+.lawn-grn {
+    background-color: lawngreen;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.lime-grn {
+    background-color: limegreen;
+}
+
+.pale-grn {
+    background-color: palegreen;
+}
+
+.light-grn {
+    background-color: lightgreen;
+}
+
+.med-spr-grn {
+    background-color: mediumspringgreen;
+}
+
+.spr-grn {
+    background-color: springgreen;
+}
+
+.med-sea-grn {
+    background-color: mediumseagreen;
+}
+
+.sea-grn {
+    background-color: seagreen;
+}
+
+.forest-grn {
+    background-color: forestgreen;
+}
+
+.grn {
+    background-color: green;
+}
+
+.dark-grn {
+    background-color: darkgreen;
+}
+
+.ylw-grn {
+    background-color: yellowgreen;
+}
+
+.olive-drab {
+    background-color: olivedrab;
+}
+
+.olive {
+    background-color: olive;
+}
+
+.dark-olive-grn {
+    background-color: darkolivegreen;
+}
+
+.dark-sea-grn {
+    background-color: darkseagreen;
+}
+
+.light-sea-grn {
+    background-color: lightseagreen;
+}
+
+.dark-cyan {
+    background-color: darkcyan;
+}
+
+.teal {
+    background-color: teal;
+}
+/* Greens--END */
+
+/* Blues--START */
+.aqua {
+    background-color: aqua;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.light-cyan {
+    background-color: lightcyan;
+}
+
+.pale-turq {
+    background-color: paleturquoise;
+}
+
+.aquamar {
+    background-color: aquamarine;
+}
+
+.med-aquamar {
+    background-color: mediumaquamarine;
+}
+
+.turq {
+    background-color: turquoise;
+}
+
+.med-turq {
+    background-color: mediumturquoise;
+}
+
+.dark-turq {
+    background-color: darkturquoise;
+}
+
+.cad-blu {
+    background-color: cadetblue;
+}
+
+.steel-blu {
+    background-color: steelblue;
+}
+
+.light-steel-blu {
+    background-color: lightsteelblue;
+}
+
+.pow-blu {
+    background-color: powderblue;
+}
+
+.light-blu {
+    background-color: lightblue;
+}
+
+.sky-blu {
+    background-color: skyblue;
+}
+
+.light-sky-blu {
+    background-color: lightskyblue;
+}
+
+.deep-sky-blu {
+    background-color: deepskyblue;
+}
+
+.dod-blu {
+    background-color: dodgerblue;
+}
+
+.corn-blu {
+    background-color: cornflowerblue;
+}
+
+.royal-blu {
+    background-color: royalblue;
+}
+
+.blu {
+    background-color: blue;
+}
+
+.med-blu {
+    background-color: mediumblue;
+}
+
+.dark-blu {
+    background-color: darkblue;
+}
+
+.navy {
+    background-color: navy;
+}
+
+.midnight-blu {
+    background-color: midnightblue;
+}
+/* Blues--END */
+
+/* Purples--START */
+.lav {
+    background-color: lavender;
+}
+
+.thistle {
+    background-color: thistle;
+}
+
+.plum {
+    background-color: plum;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.orchid {
+    background-color: orchid;
+}
+
+.fuchsia {
+    background-color: fuchsia;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.med-orchid {
+    background-color: mediumorchid;
+}
+
+.med-purp {
+    background-color: mediumpurple;
+}
+
+.blu-violet {
+    background-color: blueviolet;
+}
+
+.dark-violet {
+    background-color: darkviolet;
+}
+
+.dark-orchid {
+    background-color: darkorchid;
+}
+
+.dark-magenta {
+    background-color: darkmagenta;
+}
+
+.purp {
+    background-color: purple;
+}
+
+.rebecca-purp {
+    background-color: rebeccapurple;
+}
+
+.indigo {
+    background-color: indigo;
+}
+
+.med-slate-blu {
+    background-color: mediumslateblue;
+}
+
+.slate-blu {
+    background-color: slateblue;
+}
+
+.dark-slate-blu {
+    background-color: darkslateblue;
+}
+/* Purples--END */
+
+/* Pinks--START */
+.pink {
+    background-color: pink;
+}
+
+.light-pink {
+    background-color: lightpink;
+}
+
+.hot-pink {
+    background-color: hotpink;
+}
+
+.deep-pink {
+    background-color: deeppink;
+}
+
+.med-vi-red {
+    background-color: mediumvioletred;
+}
+
+.pale-vi-red {
+    background-color: palevioletred;
+}
+/* Pinks--END */
+
+/* Greys--START */
+.gains {
+    background-color: gainsboro;
+}
+
+.light-grey {
+    background-color: lightgrey;
+}
+
+.light-gray {
+    background-color: lightgray;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.dark-grey {
+    background-color: darkgrey;
+}
+
+.dark-gray {
+    background-color: darkgray;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.dim-grey {
+    background-color: dimgrey;
+}
+
+.dim-gray {
+    background-color: dimgray;
+}
+
+.light-slate-grey {
+    background-color: lightslategrey;
+}
+
+.light-slate-gray {
+    background-color: lightslategray;
+}
+
+.slate-grey {
+    background-color: slategrey;
+}
+
+.slate-gray {
+    background-color: slategray;
+}
+
+.dark-slate-grey {
+    background-color: darkslategrey;
+}
+
+.dark-slate-gray {
+    background-color: darkslategray;
+}
+
+.black {
+    background-color: black;
+}
+/* Greys--END */
