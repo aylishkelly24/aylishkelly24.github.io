@@ -1,0 +1,264 @@
+/* Font Setup START */
+@font-face {
+    font-family:'agrandir';
+    src:url('discoverdundonian/assets/PPAgrandir-GrandHeavy.woff') format('woff');
+    font-display:auto;font-weight:normal;font-style:normal;
+  }
+
+  @font-face {
+    font-family:'pangramSansRounded';
+    src:url('discoverdundonian/assets/PPPangramSansRounded-Regular.woff') format('woff');
+    font-display:auto;font-weight:normal;font-style:normal;
+  }
+/* Font Setup END */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    width: 100%;
+}
+
+/* Text Highlight START */
+::-moz-selection {
+    background-color: #ffbb10;
+    color:#020026;
+}
+
+::selection{
+    background-color: #ffbb10;
+    color:#020026;
+}
+/* Text Highlight END */
+
+/* Scrollbar START */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #020026;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #f43122;
+    border-radius: 100px;
+  }
+  /* Scrollbar END */
+
+/* Header START */
+nav {
+    height: 49px;
+    width: 100%;
+    background-color: #f43122;
+    border-bottom: 1px solid #020026;
+    margin: 0 auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#logo {
+    margin: 20px;
+    height: 20px;
+}
+
+#logo:hover {
+    margin-left: 10px;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+}
+
+nav li {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+nav a {
+    font-family: 'agrandir';
+    text-decoration: none;
+    color: #020026;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffbb10;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #ffbb10;
+    text-decoration: none;
+}
+/* Header END */
+
+main {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    scroll-snap-align: start;
+    width: 100vw;
+}
+
+/* SECTION map --- START */
+#map {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    background-image: url('discoverdundonian/assets/map.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* importantBox START */
+#important {
+    width: 21%;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+#important, p {
+    font-family: 'pangramSansRounded';
+    font-size: 12px;
+    color: #020026;
+    margin: 10px;
+}
+
+#icon-important {
+    height: 55px;
+    margin: 5px;
+}
+/* importantBox END */
+
+/* key START */
+#key {
+    width: 15%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    align-self: flex-end;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: 'agrandir';
+    font-size: 20px;
+    color: #ffbb10;
+    text-decoration: underline;
+}
+
+#key, ul {
+    list-style: none;
+    font-family: 'pangramSansRounded';
+    font-size: 12px;
+    color: #020026;
+}
+
+#key, li:hover {
+    color: #ffbb10;
+    cursor: pointer;
+}
+
+#key, li:active {
+    color: #f43122;
+    cursor: pointer;
+}
+
+.key-div {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    background-color: #38b4d6;
+    margin-right: 3px;
+}
+
+.list-item-container {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    padding: 2px 0;
+}
+/* key END */
+
+/* SECTION map --- END */
+
+/* SECTION stories --- START */
+#stories {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #020026;
+}
+/* SECTION stories --- END */
+
+/* SECTION about-contact --- START */
+#about-contact {
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    display: inline-flex;
+}
+
+.about-contact-child {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#contact {
+    background-color: #38b4d6;
+}
+/* SECTION about-contact --- END */
+
+/* footer START */
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #ffbb10;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+}
+
+#copyright {
+    font-family: 'agrandir';
+    font-size: 10px;
+    color: 
+    #fff;
+}
+/* footer END */
