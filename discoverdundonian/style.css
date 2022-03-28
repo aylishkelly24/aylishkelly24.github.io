@@ -1,13 +1,13 @@
 /* Font Setup START */
 @font-face {
     font-family:'agrandir';
-    src:url('discoverdundonian/assets/PPAgrandir-GrandHeavy.woff') format('woff');
+    src:url('assets/PPAgrandir-GrandHeavy.woff') format('woff');
     font-display:auto;font-weight:normal;font-style:normal;
   }
 
   @font-face {
     font-family:'pangramSansRounded';
-    src:url('discoverdundonian/assets/PPPangramSansRounded-Regular.woff') format('woff');
+    src:url('assets/PPPangramSansRounded-Regular.woff') format('woff');
     font-display:auto;font-weight:normal;font-style:normal;
   }
 /* Font Setup END */
@@ -129,7 +129,7 @@ section {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    background-image: url('discoverdundonian/assets/map.webp');
+    background-image: url('assets/map.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
