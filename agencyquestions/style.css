@@ -1,0 +1,279 @@
+/* Font Setup START */
+@font-face {
+    font-family:'telegraf';
+    src:url('assets/PPTelegraf-Regular.woff') format('woff');
+    font-display:auto;font-weight:normal;font-style:normal;
+  }
+
+  @font-face {
+    font-family:'telegraf-light';
+    src:url('assets/PPTelegraf-UltraLight.woff') format('woff');
+    font-display:auto;font-weight:lighter;font-style:normal;
+  }
+/* Font Setup END */
+
+/* Universal Styles START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    font-size: 16px;
+}
+/* Universal Styles END */
+
+/* Scrollbar START */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #020026;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  /* Scrollbar END */
+
+/* Header START */
+header {
+    height: 100vh;
+    width: 4rem;
+    background-color: #000;
+    border-right: 0.5px solid #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    font-family: 'telegraf';
+    color: #fff;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+#nav-one:hover {
+  color: #ff3e3e;
+}
+
+#nav-two:hover {
+  color: #ffcb24;
+}
+
+#nav-three:hover {
+  color: #9ccc06;
+}
+
+#nav-four:hover {
+  color: #0ae5bb;
+}
+
+#nav-five:hover {
+  color: #4040e2;
+}
+/* Header END */
+
+/* Main START */
+main {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-items: space-evenly;
+    align-items: center;
+}
+
+section {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+/* Main END */
+
+/* Title START */
+.zero-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#zero .question-text {
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+#zero .answer-container {
+  padding: 0;
+}
+
+.prev-div {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+
+.prev-num {
+  font-family: 'telegraf-light';
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.prev-q-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  justify-content: space-evenly;
+}
+
+.prev-q {
+  font-family: 'telegraf';
+  font-size: 1rem;
+}
+
+#prev-one:hover {
+  background-color: #ff3e3e;
+  color: #fff;
+}
+
+#prev-two:hover {
+  background-color: #ffcb24;
+  color: #fff;
+}
+
+#prev-three:hover {
+  background-color: #9ccc06;
+  color: #fff;
+}
+
+#prev-four:hover {
+  background-color: #0ae5bb;
+  color: #fff;
+}
+
+#prev-five:hover {
+  background-color: #4040e2;
+  color: #fff;
+}
+/* Title END */
+
+/* Questions START */
+.question-container {
+  width: 40vw;
+  height: 100vh;
+  margin-left: 4rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+
+.question-num {
+  font-family: 'telegraf';
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+}
+
+span {
+  font-size: 0.5rem;
+}
+
+.question-text {
+  font-family: 'telegraf-light';
+  display: block;
+  font-size: 3rem;
+  padding-top: 1rem;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.question-quote {
+  font-family: 'telegraf-light';
+  font-size: 0.75rem;
+  width: 65%;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+/* Questions END */
+
+/* Answers START */
+.answer-container {
+  width: 60vw;
+  height: 100vh;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.answer-num {
+  font-family: 'telegraf';
+  display: block;
+  font-size: 1rem;
+  color: #000;
+}
+
+.answer-text {
+  font-family: 'telegraf';
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#one .answer-text a:hover,
+#one-ex .answer-text a:hover {
+  color: #ff3e3e;
+}
+
+#two .answer-text a:hover {
+  color: #ffcb24;
+}
+
+#three .answer-text a:hover {
+  color: #9ccc06;
+}
+
+#four .answer-text a:hover,
+#four-ex .answer-text a:hover {
+  color: #0ae5bb;
+}
+
+#five .answer-text a:hover,
+#five-ex .answer-text a:hover {
+  color: #4040e2;
+}
+/* Answers END */
